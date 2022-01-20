@@ -1,0 +1,1582 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 218,
+  "hideSelection": true,
+  "fillHorizontally": true,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "background-color": "",
+      "display": "block"
+    },
+    "attributes": {
+      "class": ""
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "height": "218px",
+          "border-radius": "4px 4px",
+          "border": "solid 1px darkgrey",
+          "padding-bottom": "2px",
+          "background-color": "#fafafa"
+        },
+        "attributes": {
+          "class": "ms-bgColor-white sp-css-borderColor-neutralLight sp-card-borderHighlight"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "display": "block"
+            },
+            "attributes": {
+              "class": ""
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-wrap": "nowrap",
+                  "justify-content": "space-between",
+                  "width": "",
+                  "margin-bottom": "2px",
+                  "height": "",
+                  "background-color": "#dedefc"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "customRowAction": {
+                      "action": "defaultClick"
+                    },
+                    "style": {
+                      "width": "118px",
+                      "padding-left": "6px",
+                      "padding-top": "6px",
+                      "height": "18px",
+                      "padding-bottom": "6px",
+                      "margin-bottom": "2px",
+                      "background-color": "#dedefc",
+                      "font-weight": "800"
+                    },
+                    "attributes": {
+                      "class": "sp-css-color-DarkPurpleText sp-card-content sp-card-highlightedContent sp-field-bold",
+                      "title": "Open side pane"
+                    },
+                    "txtContent": "=[$field_1] + ' - ' + [$Title]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "padding-top": "7px",
+                      "width": "22px",
+                      "text-align": "center",
+                      "margin-left": "10px",
+                      "margin-right": "10px"
+                    },
+                    "attributes": {
+                      "iconName": "Trash",
+                      "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                      "title": "Delete all tasks"
+                    },
+                    "customRowAction": {
+                      "action": "setValue",
+                      "actionInput": {
+                        "field_7": "",
+                        "field_11": "",
+                        "field_15": "",
+                        "field_19": "",
+                        "field_23": "",
+                        "field_27": "",
+                        "field_31": "",
+                        "field_8": "",
+                        "field_12": "",
+                        "field_16": "",
+                        "field_20": "",
+                        "field_24": "",
+                        "field_28": "",
+                        "field_32": "",
+                        "field_5": "",
+                        "field_9": "",
+                        "field_13": "",
+                        "field_17": "",
+                        "field_21": "",
+                        "field_25": "",
+                        "field_29": "",
+                        "field_6": "",
+                        "field_10": "",
+                        "field_14": "",
+                        "field_18": "",
+                        "field_22": "",
+                        "field_26": "",
+                        "field_30": ""
+                      }
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "padding-top": "7px",
+                      "width": "22px",
+                      "text-align": "center",
+                      "margin-right": "10px"
+                    },
+                    "attributes": {
+                      "iconName": "=if([$field_33] =='', 'FavoriteStar' , 'FavoriteStarFill' )",
+                      "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                      "title": "Mark as favorite"
+                    },
+                    "customRowAction": {
+                      "action": "setValue",
+                      "actionInput": {
+                        "field_33": "=if([$field_33] =='', 'Favorite', '')"
+                      }
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "padding-top": "7px",
+                      "width": "22px",
+                      "text-align": "center",
+                      "margin-right": "10px",
+                      "font-size": "1.4em"
+                    },
+                    "attributes": {
+                      "iconName": "Info",
+                      "class": "sp-css-color-DarkPurpleText",
+                      "title": "Get overview"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "650px",
+                          "height": "550px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px DarkSlateBlue",
+                          "border-radius": "4px 4px",
+                          "display": "block"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "white",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "",
+                              "border-radius": "4px 4px",
+                              "display": "inherit",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "center"
+                            },
+                            "txtContent": "='DAY OVERVIEW OF ' +toUpperCase([$Title]) +': ' + [$field_1] + '/' + [$field_3] + '/' +'2022'",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_6] =='', '', if([$field_6] =='LightSkyBlue', '#bae5ff', if([$field_6] =='Plum', '#edafed', if([$field_6] =='Orange', '#ffd280', if([$field_6] =='LightGreen', '#90ee90', if([$field_6] =='LemonChiffon', '#fff7ab', if([$field_6] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_5] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_5]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_10] =='', '', if([$field_10] =='LightSkyBlue', '#bae5ff', if([$field_10] =='Plum', '#edafed', if([$field_10] =='Orange', '#ffd280', if([$field_10] =='LightGreen', '#90ee90', if([$field_10] =='LemonChiffon', '#fff7ab', if([$field_10] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_9] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_9]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_14] =='', '', if([$field_14] =='LightSkyBlue', '#bae5ff', if([$field_14] =='Plum', '#edafed', if([$field_14] =='Orange', '#ffd280', if([$field_14] =='LightGreen', '#90ee90', if([$field_14] =='LemonChiffon', '#fff7ab', if([$field_14] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_13] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_13]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_18] =='', '', if([$field_18] =='LightSkyBlue', '#bae5ff', if([$field_18] =='Plum', '#edafed', if([$field_18] =='Orange', '#ffd280', if([$field_18] =='LightGreen', '#90ee90', if([$field_18] =='LemonChiffon', '#fff7ab', if([$field_18] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_17] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_17]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_22] =='', '', if([$field_22] =='LightSkyBlue', '#bae5ff', if([$field_22] =='Plum', '#edafed', if([$field_22] =='Orange', '#ffd280', if([$field_22] =='LightGreen', '#90ee90', if([$field_22] =='LemonChiffon', '#fff7ab', if([$field_22] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_21] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_21]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_26] =='', '', if([$field_26] =='LightSkyBlue', '#bae5ff', if([$field_26] =='Plum', '#edafed', if([$field_26] =='Orange', '#ffd280', if([$field_26] =='LightGreen', '#90ee90', if([$field_26] =='LemonChiffon', '#fff7ab', if([$field_26] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_25] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_25]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "box-sizing": "border-box",
+                              "width": "650px",
+                              "height": "",
+                              "background-color": "=if([$field_30] =='', '', if([$field_30] =='LightSkyBlue', '#bae5ff', if([$field_30] =='Plum', '#edafed', if([$field_30] =='Orange', '#ffd280', if([$field_30] =='LightGreen', '#90ee90', if([$field_30] =='LemonChiffon', '#fff7ab', if([$field_30] =='LightPink', '#ffb6c1', '')))))))",
+                              "margin-top": "10px",
+                              "margin-left": "auto",
+                              "border": "dotted 1px darkblue",
+                              "border-radius": "4px 4px",
+                              "display": "=if([$field_29] !='', 'inherit', 'none')",
+                              "padding": "4px 4px 8px 4px",
+                              "text-align": "left"
+                            },
+                            "txtContent": "[$field_29]",
+                            "attributes": {
+                              "class": "sp-field-fontSizeMedium sp-css-color-DarkPurpleText sp-field-bold"
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "bottomCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "padding-top": "7px",
+                      "width": "22px",
+                      "text-align": "right"
+                    },
+                    "attributes": {
+                      "iconName": "Share",
+                      "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                      "title": "Share"
+                    },
+                    "customRowAction": {
+                      "action": "share"
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "position": "",
+                      "width": "0",
+                      "height": "0",
+                      "border-left": "25px solid #dedefc",
+                      "border-right": "0px solid #dedefc",
+                      "border-top": "25px solid",
+                      "border-top-color": "=if([$field_33] =='Favorite', 'DarkSlateBlue', '#dedefc')",
+                      "border-radius": "0px 4px 0px 0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_7]",
+                        "txtContent": "=[$field_7]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_7] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_8]",
+                        "txtContent": "=[$field_8]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_6] =='', '', if([$field_6] =='LightSkyBlue', '#bae5ff', if([$field_6] =='Plum', '#edafed', if([$field_6] =='Orange', '#ffd280', if([$field_6] =='LightGreen', '#90ee90', if([$field_6] =='LemonChiffon', '#fff7ab', if([$field_6] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_5]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_5]",
+                    "txtContent": "[$field_5]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_6] =='', '', if([$field_6] =='LightSkyBlue', '#bae5ff', if([$field_6] =='Plum', '#edafed', if([$field_6] =='Orange', '#ffd280', if([$field_6] =='LightGreen', '#90ee90', if([$field_6] =='LemonChiffon', '#fff7ab', if([$field_6] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_5] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_6] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_6]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_7": "",
+                                "field_8": "",
+                                "field_5": "",
+                                "field_6": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_11]",
+                        "txtContent": "=[$field_11]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_11] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_12]",
+                        "txtContent": "=[$field_12]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_10] =='', '', if([$field_10] =='LightSkyBlue', '#bae5ff', if([$field_10] =='Plum', '#edafed', if([$field_10] =='Orange', '#ffd280', if([$field_10] =='LightGreen', '#90ee90', if([$field_10] =='LemonChiffon', '#fff7ab', if([$field_10] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_9]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_9]",
+                    "txtContent": "[$field_9]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_10] =='', '', if([$field_10] =='LightSkyBlue', '#bae5ff', if([$field_10] =='Plum', '#edafed', if([$field_10] =='Orange', '#ffd280', if([$field_10] =='LightGreen', '#90ee90', if([$field_10] =='LemonChiffon', '#fff7ab', if([$field_10] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_9] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_10] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_10]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_11": "",
+                                "field_12": "",
+                                "field_9": "",
+                                "field_10": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_15]",
+                        "txtContent": "=[$field_15]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_15] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_16]",
+                        "txtContent": "=[$field_16]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_14] =='', '', if([$field_14] =='LightSkyBlue', '#bae5ff', if([$field_14] =='Plum', '#edafed', if([$field_14] =='Orange', '#ffd280', if([$field_14] =='LightGreen', '#90ee90', if([$field_14] =='LemonChiffon', '#fff7ab', if([$field_14] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_13]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_13]",
+                    "txtContent": "[$field_13]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_14] =='', '', if([$field_14] =='LightSkyBlue', '#bae5ff', if([$field_14] =='Plum', '#edafed', if([$field_14] =='Orange', '#ffd280', if([$field_14] =='LightGreen', '#90ee90', if([$field_14] =='LemonChiffon', '#fff7ab', if([$field_14] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_13] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_14] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_14]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_15": "",
+                                "field_16": "",
+                                "field_13": "",
+                                "field_14": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_19]",
+                        "txtContent": "=[$field_19]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_19] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_20]",
+                        "txtContent": "=[$field_20]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_18] =='', '', if([$field_18] =='LightSkyBlue', '#bae5ff', if([$field_18] =='Plum', '#edafed', if([$field_18] =='Orange', '#ffd280', if([$field_18] =='LightGreen', '#90ee90', if([$field_18] =='LemonChiffon', '#fff7ab', if([$field_18] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_17]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_17]",
+                    "txtContent": "[$field_17]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_18] =='', '', if([$field_18] =='LightSkyBlue', '#bae5ff', if([$field_18] =='Plum', '#edafed', if([$field_18] =='Orange', '#ffd280', if([$field_18] =='LightGreen', '#90ee90', if([$field_18] =='LemonChiffon', '#fff7ab', if([$field_18] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_17] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_18] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_18]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_19": "",
+                                "field_20": "",
+                                "field_17": "",
+                                "field_18": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_23]",
+                        "txtContent": "=[$field_23]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_23] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_24]",
+                        "txtContent": "=[$field_24]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_22] =='', '', if([$field_22] =='LightSkyBlue', '#bae5ff', if([$field_22] =='Plum', '#edafed', if([$field_22] =='Orange', '#ffd280', if([$field_22] =='LightGreen', '#90ee90', if([$field_22] =='LemonChiffon', '#fff7ab', if([$field_22] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_21]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_21]",
+                    "txtContent": "[$field_21]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_22] =='', '', if([$field_22] =='LightSkyBlue', '#bae5ff', if([$field_22] =='Plum', '#edafed', if([$field_22] =='Orange', '#ffd280', if([$field_22] =='LightGreen', '#90ee90', if([$field_22] =='LemonChiffon', '#fff7ab', if([$field_22] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_21] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_22] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_22]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_23": "",
+                                "field_24": "",
+                                "field_21": "",
+                                "field_22": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_27]",
+                        "txtContent": "=[$field_27]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_27] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_28]",
+                        "txtContent": "=[$field_28]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_26] =='', '', if([$field_26] =='LightSkyBlue', '#bae5ff', if([$field_26] =='Plum', '#edafed', if([$field_26] =='Orange', '#ffd280', if([$field_26] =='LightGreen', '#90ee90', if([$field_26] =='LemonChiffon', '#fff7ab', if([$field_26] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_25]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_25]",
+                    "txtContent": "[$field_25]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_26] =='', '', if([$field_26] =='LightSkyBlue', '#bae5ff', if([$field_26] =='Plum', '#edafed', if([$field_26] =='Orange', '#ffd280', if([$field_26] =='LightGreen', '#90ee90', if([$field_26] =='LemonChiffon', '#fff7ab', if([$field_26] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_25] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_26] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_26]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_27": "",
+                                "field_28": "",
+                                "field_25": "",
+                                "field_26": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "width": "84px",
+                      "display": "flex",
+                      "margin-left": "2px",
+                      "margin-right": "2px",
+                      "background-color": "#f5f5ff"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500",
+                          "text-align": "left"
+                        },
+                        "inlineEditField": "[$field_31]",
+                        "txtContent": "=[$field_31]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "width": "12px",
+                          "height": "16px",
+                          "padding-top": "7px",
+                          "text-align": "center",
+                          "font-size": "12px"
+                        },
+                        "attributes": {
+                          "class": "ms-fontColor-themePrimary",
+                          "iconName": "=if([$field_31] !='', 'ChevronRightSmall', '')"
+                        }
+                      },
+                      {
+                        "elmType": "div",
+                        "style": {
+                          "cursor": "pointer",
+                          "box-sizing": "border-box",
+                          "width": "35px",
+                          "height": "24px",
+                          "padding-top": "3px",
+                          "margin-bottom": "2px",
+                          "font-weight": "500"
+                        },
+                        "inlineEditField": "[$field_32]",
+                        "txtContent": "=[$field_32]",
+                        "attributes": {
+                          "class": "sp-css-color-DarkPurpleText"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_30] =='', '', if([$field_30] =='LightSkyBlue', '#bae5ff', if([$field_30] =='Plum', '#edafed', if([$field_30] =='Orange', '#ffd280', if([$field_30] =='LightGreen', '#90ee90', if([$field_30] =='LemonChiffon', '#fff7ab', if([$field_30] =='LightPink', '#ffb6c1', '')))))))",
+                      "box-sizing": "border-box",
+                      "width": "250px",
+                      "height": "24px",
+                      "text-overflow": "ellipsis",
+                      "overflow": "hidden",
+                      "white-space": "nowrap",
+                      "padding-left": "6px",
+                      "padding-right": "2px",
+                      "padding-top": "2px",
+                      "margin-bottom": "2px",
+                      "border-radius": "4px 0px 0px 4px",
+                      "font-weight": "600"
+                    },
+                    "attributes": {
+                      "title": "[$field_29]",
+                      "class": "sp-css-color-DarkPurpleText"
+                    },
+                    "inlineEditField": "[$field_29]",
+                    "txtContent": "[$field_29]"
+                  },
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "cursor": "pointer",
+                      "background-color": "=if([$field_30] =='', '', if([$field_30] =='LightSkyBlue', '#bae5ff', if([$field_30] =='Plum', '#edafed', if([$field_30] =='Orange', '#ffd280', if([$field_30] =='LightGreen', '#90ee90', if([$field_30] =='LemonChiffon', '#fff7ab', if([$field_30] =='LightPink', '#ffb6c1', '')))))))",
+                      "width": "18px",
+                      "height": "20px",
+                      "padding-top": "4px",
+                      "text-align": "center",
+                      "display": "=if([$field_29] !='', 'inherit', 'none')"
+                    },
+                    "attributes": {
+                      "class": "=if([$field_30] !='', 'sp-css-color-DarkPurpleText', 'ms-fontColor-purpleLight')",
+                      "iconName": "Settings"
+                    },
+                    "customCardProps": {
+                      "formatter": {
+                        "elmType": "div",
+                        "style": {
+                          "width": "54px",
+                          "height": "40px",
+                          "background-color": "#f5f5ff",
+                          "padding": "0 16px 0 16px",
+                          "border": "solid 1px Grey",
+                          "border-radius": "4px 4px",
+                          "display": "flex",
+                          "justify-content": "center"
+                        },
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "inlineEditField": "[$field_30]",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center",
+                              "margin-right": "12px"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "ColorSolid"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "cursor": "pointer",
+                              "width": "32px",
+                              "height": "20px",
+                              "padding-top": "4px",
+                              "text-align": "center"
+                            },
+                            "attributes": {
+                              "class": "sp-css-color-DarkPurpleText sp-field-fontSizeXLarge",
+                              "iconName": "Delete"
+                            },
+                            "customRowAction": {
+                              "action": "setValue",
+                              "actionInput": {
+                                "field_31": "",
+                                "field_32": "",
+                                "field_29": "",
+                                "field_30": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "openOnEvent": "click",
+                      "directionalHint": "rightCenter",
+                      "isBeakVisible": true,
+                      "beakStyle": {
+                        "backgroundColor": "DarkSlateBlue"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

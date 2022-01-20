@@ -1,0 +1,113 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "1"
+        }
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 0, 'FavoriteStar' , 'FavoriteStarFill' )",
+        "class": "ms-fontColor-themePrimary ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "2"
+        }
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 0 || @currentField == 1, 'FavoriteStar' , 'FavoriteStarFill' )",
+        "class": "ms-fontColor-themePrimary ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "3"
+        }
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 0 || @currentField == 1 || @currentField == 2, 'FavoriteStar' , 'FavoriteStarFill' )",
+        "class": "ms-fontColor-themePrimary ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "4"
+        }
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 0 || @currentField == 1 || @currentField == 2 || @currentField == 3, 'FavoriteStar' , 'FavoriteStarFill' )",
+        "class": "ms-fontColor-themePrimary ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "5"
+        }
+      },
+      "attributes": {
+        "iconName": "=if(@currentField == 0 || @currentField == 1 || @currentField == 2 || @currentField == 3 || @currentField == 4, 'FavoriteStar' , 'FavoriteStarFill' )",
+        "class": "ms-fontColor-themePrimary ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "40px",
+        "margin-left": "10px"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "0"
+        }
+      },
+      "attributes": {
+        "iconName": "StatusCircleErrorX",
+        "class": "ms-fontColor-themePrimary ms-fontColor-red--hover"
+      }
+    }
+  ]
+}

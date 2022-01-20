@@ -1,0 +1,134 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "display": "=if(indexOf([$VOTERS.email], @me) == -1, 'inherit','none')"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "1",
+          "AGGREGATE": "=[$AGGREGATE] +1",
+          "VOTES": "=[$VOTES] +1",
+          "AVERAGE": "=(Number([$AGGREGATE] +1) / Number([$VOTES] +1))",
+          "DETAILS": "=if(length([$DETAILS]) > 0, [$DETAILS] + ',','') + @me + ' has voted 1'",
+          "VOTERS": "=appendTo([$VOTERS], @me)"
+        }
+      },
+      "attributes": {
+        "iconName": "FavoriteStarFill",
+        "class": "ms-fontColor-sharedGray10 ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px",
+        "display": "=if(indexOf([$VOTERS.email], @me) == -1, 'inherit','none')"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "2",
+          "AGGREGATE": "=[$AGGREGATE] +2",
+          "VOTES": "=[$VOTES] +1",
+          "AVERAGE": "=(Number([$AGGREGATE] +2) / Number([$VOTES] +1))",
+          "DETAILS": "=if(length([$DETAILS]) > 0, [$DETAILS] + ',','') + @me + ' has voted 2'",
+          "VOTERS": "=appendTo([$VOTERS.email], @me)"
+        }
+      },
+      "attributes": {
+        "iconName": "FavoriteStarFill",
+        "class": "ms-fontColor-sharedGray10 ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px",
+        "display": "=if(indexOf([$VOTERS.email], @me) == -1, 'inherit','none')"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "3",
+          "AGGREGATE": "=[$AGGREGATE] +3",
+          "VOTES": "=[$VOTES] +1",
+          "AVERAGE": "=(Number([$AGGREGATE] +3) / Number([$VOTES] +1))",
+          "DETAILS": "=if(length([$DETAILS]) > 0, [$DETAILS] + ',','') + @me + ' has voted 3'",
+          "VOTERS": "=appendTo([$VOTERS.email], @me)"
+        }
+      },
+      "attributes": {
+        "iconName": "FavoriteStarFill",
+        "class": "ms-fontColor-sharedGray10 ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px",
+        "display": "=if(indexOf([$VOTERS.email], @me) == -1, 'inherit','none')"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "4",
+          "AGGREGATE": "=[$AGGREGATE] +4",
+          "VOTES": "=[$VOTES] +1",
+          "AVERAGE": "=(Number([$AGGREGATE] +4) / Number([$VOTES] +1))",
+          "DETAILS": "=if(length([$DETAILS]) > 0, [$DETAILS] + ',','') + @me + ' has voted 4'",
+          "VOTERS": "=appendTo([$VOTERS.email], @me)"
+        }
+      },
+      "attributes": {
+        "iconName": "FavoriteStarFill",
+        "class": "ms-fontColor-sharedGray10 ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "cursor": "pointer",
+        "font-size": "30px",
+        "margin-left": "10px",
+        "display": "=if(indexOf([$VOTERS.email], @me) == -1, 'inherit','none')"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "RATING": "5",
+          "AGGREGATE": "=[$AGGREGATE] +5",
+          "VOTES": "=[$VOTES] +1",
+          "AVERAGE": "=(Number([$AGGREGATE] +5) / Number([$VOTES] +1))",
+          "DETAILS": "=if(length([$DETAILS]) > 0, [$DETAILS] + ',','') + @me + ' has voted 5'",
+          "VOTERS": "=appendTo([$VOTERS.email], @me)"
+        }
+      },
+      "attributes": {
+        "iconName": "FavoriteStarFill",
+        "class": "ms-fontColor-sharedGray10 ms-fontColor-orangeLighter--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "txtContent": "=if(indexOf([$DETAILS], @me + ' has voted 1') != -1, 'Thanks! You have voted 1', if(indexOf([$DETAILS], @me + ' has voted 2') != -1, ' Thanks! You have voted 2', if(indexOf([$DETAILS], @me + ' has voted 3') != -1, ' Thanks! You have voted 3', if(indexOf([$DETAILS], @me + ' has voted 4') != -1, ' Thanks! You have voted 4', if(indexOf([$DETAILS], @me + ' has voted 5') != -1, ' Thanks! You have voted 5', '')",
+      "style": {
+        "display": "=if(indexOf([$DETAILS], @me) == -1, 'none','inherit')",
+        "color": "#0b9e24",
+        "font-size": "18px"
+      }
+    }
+  ]
+}

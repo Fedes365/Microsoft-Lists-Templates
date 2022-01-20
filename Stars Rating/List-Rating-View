@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "additionalRowClass": "= if ([$AVERAGE]>= 4.8,'ms-bgColor-themeLighterAlt sp-field-fontSizeMedium sp-field-bold sp-css-color-BlackText','sp-field-fontSizeMedium sp-field-bold sp-css-color-BlackText')"
+}

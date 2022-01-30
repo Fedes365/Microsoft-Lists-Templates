@@ -1,0 +1,174 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "hideColumnHeader": true,
+  "hideSelection": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "background-color": "#ffedd9",
+      "width": "765px",
+      "align-items": "flex-start",
+      "justify-content": "left",
+      "display": "flex",
+      "flex-wrap": "wrap"
+    },
+    "children": [
+      {
+        "elmType": "img",
+        "attributes": {
+          "src": "='/_layouts/15/userphoto.aspx?size=M&accountname=' + [$USER.email]"
+        },
+        "style": {
+          "height": "60px",
+          "width": "60px",
+          "margin-right": "4px",
+          "margin-left": "20px",
+          "margin-top": "40px",
+          "border-radius": "50px",
+          "box-shadow": "2px 2px 2px #bdbbb7",
+          "border": "solid 0.8px black"
+        },
+        "defaultHoverField": "[$USER]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "font-size": "36px",
+          "margin-top": "32.5px",
+          "margin-right": "-4px",
+          "color": "white",
+          "text-shadow": "-1px 0px grey",
+          "z-index": "0"
+        },
+        "txtContent": "◀"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "max-width": "630px",
+          "min-width": "500px",
+          "margin-top": "20px",
+          "display": "block",
+          "max-height": "230px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "border-radius": "4px 4px 0px 0px",
+              "background-color": "#b56918",
+              "box-sizing": "border-box",
+              "height": "26px",
+              "font-weight": "normal",
+              "padding": "0px 10px 0px 16px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "left",
+              "box-shadow": "2px 2px 2px 1px #bdbbb7"
+            },
+            "attributes": {
+              "class": "sp-field-fontSizeMedium sp-css-color-WhiteText"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "margin-right": "20px"
+                },
+                "txtContent": "[$USER.title]"
+              },
+              {
+                "elmType": "div",
+                "txtContent": "=toLocaleString([$TIMEDETAILS])"
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "flex": "2"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "font-size": "22px",
+                  "display": "=if([$IMPORTANT] !='', 'flex', 'none')"
+                },
+                "attributes": {
+                  "iconName": "AlertSolid",
+                  "class": "ms-fontColor-sharedYellow10"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "box-sizing": "border-box",
+              "padding-left": "10px",
+              "padding-right": "10px",
+              "padding-top": "6px",
+              "height": "30px",
+              "text-overflow": "ellipsis",
+              "overflow": "hidden",
+              "white-space": "nowrap",
+              "box-shadow": "2px 2px 2px 1px #bdbbb7"
+            },
+            "attributes": {
+              "class": "sp-css-backgroundColor-white sp-field-fontSizeLarge sp-css-color-BlackText sp-field-bold"
+            },
+            "txtContent": "='Subject: ' + [$SUBJECT]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "box-sizing": "border-box",
+              "border-radius": "0px 0px 4px 4px",
+              "padding-left": "10px",
+              "padding-right": "10px",
+              "padding-top": "6px",
+              "max-height": "154px",
+              "min-height": "62px",
+              "overflow": "hidden",
+              "box-shadow": "2px 3px 2px 1px #bdbbb7"
+            },
+            "attributes": {
+              "class": "sp-css-backgroundColor-white sp-field-fontSizeMedium sp-css-color-GrayText sp-field-bold"
+            },
+            "txtContent": "[$MESSAGE]"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "height": "20px",
+              "box-sizing": "border-box",
+              "border-radius": "0px 0px 4px 4px",
+              "top": "-19px",
+              "position": "relative",
+              "display": "flex",
+              "justify-content": "flex-end"
+            },
+            "attributes": {
+              "class": "sp-css-backgroundColor-white"
+            },
+            "children": [
+              {
+                "elmType": "a",
+                "style": {
+                  "margin-top": "2px",
+                  "margin-right": "6px",
+                  "text-decoration": "none"
+                },
+                "attributes": {
+                  "href": "[$MESSAGEURL]",
+                  "target": "_blank",
+                  "class": "sp-css-color-BrownText"
+                },
+                "txtContent": "⯈ Read more..."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

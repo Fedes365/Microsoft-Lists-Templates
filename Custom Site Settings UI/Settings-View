@@ -1,0 +1,112 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 115,
+  "width": 288,
+  "hideSelection": true,
+  "fillHorizontally": true,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "align-items": "center",
+      "background-color": "",
+      "margin-top": "0px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "width": "288px",
+          "display": "flex",
+          "margin-top": "0px",
+          "border": "solid 1px black",
+          "border-radius": "6px",
+          "box-shadow": "3px 0px 3px #bdbbb7"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "height": "83px",
+              "width": "83px",
+              "background-color": "=if([$SETTINGS_GROUP] == 'Look and Feel', '#e0efff', if([$SETTINGS_GROUP] == 'Site Actions', '#ccffda', if([$SETTINGS_GROUP] == 'Web Designer Galleries', '#e7c9ff', if([$SETTINGS_GROUP] == 'Site Collection Administration', '#ffbfbf', if([$SETTINGS_GROUP] == 'Site Administration', '#ffe6a1', if([$SETTINGS_GROUP] == 'Microsoft Search', '#d1d3ff', if([$SETTINGS_GROUP] == 'Search', '#fbffb3', '')))))))",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "border-radius": "6px 0px 0px 6px",
+              "flex-shrink": "0",
+              "font-size": "34px"
+            },
+            "attributes": {
+              "title": "[$Title]",
+              "class": "ms-fontColor-neutralPrimary",
+              "iconName": "[$ICON]"
+            }
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "height": "83px",
+              "width": "203px",
+              "display": "flex",
+              "align-items": "center",
+              "border-radius": "0px 6px 6px 0px",
+              "border-left": "solid 1px grey",
+              "padding-left": "10px",
+              "padding-right": "10px",
+              "text-decoration": "none",
+              "font-size": "16px",
+              "font-weight": "bold",
+              "color": "black"
+            },
+            "attributes": {
+              "title": "[$Title]",
+              "class": "ms-bgColor-info--hover",
+              "href": "[$SETTINGS_LINK]",
+              "target": "_blank"
+            },
+            "txtContent": "[$Title]"
+          }
+        ]
+      }
+    ]
+  },
+  "groupProps": {
+    "headerFormatter": {
+      "elmType": "div",
+      "style": {
+        "display": "flex",
+        "box-sizing": "border-box",
+        "padding": "0px 8px 5px 8px",
+        "border-radius": "10px 10px 10px 10px",
+        "align-items": "center",
+        "margin": "6px 4px 16px 1px",
+        "height": "48px",
+        "width": "",
+        "background-color": "=if(@group.fieldData == 'Look and Feel', '#2076b0', if(@group.fieldData == 'Site Actions' , '#229461', if(@group.fieldData == 'Web Designer Galleries', '#7638a8', if(@group.fieldData == 'Site Collection Administration', '#b83535', if(@group.fieldData == 'Site Administration', '#dea300', if(@group.fieldData == 'Microsoft Search', '#34377d', if(@group.fieldData == 'Search', '#c1c91e' ,'')))))))",
+        "box-shadow": "3px 0px 3px #bdbbb7"
+      },
+      "attributes": {
+        "class": "sp-css-color-white sp-field-bold"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "span",
+              "style": {
+                "padding": "5px 5px 5px 5px",
+                "font-weight": "700",
+                "font-size": "22px"
+              },
+              "txtContent": "@group.fieldData.displayValue"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

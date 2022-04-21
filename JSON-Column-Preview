@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "filepreview",
+  "style": {
+    "width": "600px",
+    "height": "400px"
+  },
+  "attributes": {
+    "src": "PUT YOUR LINK HERE OR USE @currentField OR [$COLUMN-NAME]"
+  }
+}

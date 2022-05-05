@@ -1,0 +1,51 @@
+<svg viewBox="0 0 806 250" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="316.45" y="398.47" width="100" height="100"></bx:grid>
+    <linearGradient id="paint0_linear" x1="3.71429" y1="14.8929" x2="3.71429" y2="6" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop stop-color="#E25A01"></stop>
+      <stop offset="0.6095" stop-color="#E15801"></stop>
+      <stop offset="0.8778" stop-color="#E05101"></stop>
+      <stop offset="1" stop-color="#DE4A01"></stop>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="15" y1="13.6071" x2="15" y2="6" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop stop-color="#F18C0A"></stop>
+      <stop offset="0.4373" stop-color="#F0880A"></stop>
+      <stop offset="0.8679" stop-color="#EC7C0A"></stop>
+      <stop offset="1" stop-color="#EB770A"></stop>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="14.3393" y1="19.1429" x2="14.3393" y2="12" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop stop-color="#D83B01"></stop>
+      <stop offset="0.4718" stop-color="#D63701"></stop>
+      <stop offset="0.9366" stop-color="#CE2B01"></stop>
+      <stop offset="1" stop-color="#CD2901"></stop>
+    </linearGradient>
+    <linearGradient id="paint3_linear" x1="3" y1="20" x2="3" y2="12" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop offset="0" stop-color="#BF3207"></stop>
+      <stop offset="0.4718" stop-color="#BB3207"></stop>
+      <stop offset="0.9366" stop-color="#AF3007"></stop>
+      <stop offset="1" stop-color="#AD3007"></stop>
+    </linearGradient>
+    <linearGradient id="paint4_linear" x1="14.5357" y1="24" x2="14.5357" y2="18" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop stop-color="#854A81"></stop>
+      <stop offset="0.4817" stop-color="#82497E"></stop>
+      <stop offset="0.8116" stop-color="#794475"></stop>
+      <stop offset="1" stop-color="#703F6C"></stop>
+    </linearGradient>
+    <linearGradient id="paint5_linear" x1="3" y1="24" x2="3" y2="18" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.91667, 0, 0, 5.91667, 34.520821, 42.294582)">
+      <stop stop-color="#703D6E"></stop>
+      <stop offset="0.6307" stop-color="#6C3B6A"></stop>
+      <stop offset="1" stop-color="#663764"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="250" rx="7.836" ry="7.836" style="fill: rgb(235, 243, 250); stroke-width: 4px; stroke: rgb(183, 211, 235);" x="3"></rect>
+  <g transform="matrix(1, 0, 0, 1, 8, 11.707001)">
+    <path d="M 34.518 77.793 L 70.018 42.293 L 170.878 42.293 C 174.007 42.293 176.518 44.809 176.518 47.94 L 176.518 77.793 L 105.518 94.066 L 34.518 77.793 Z" fill="#FEE200"></path>
+    <path d="M 78.476 112.237 L 34.518 130.413 L 34.518 77.793 L 70.018 77.793 L 78.476 112.237 Z" fill="url(#paint0_linear)"></path>
+    <path d="M 176.518 113.719 L 176.518 77.793 L 70.018 77.793 L 70.018 114.14 L 118.412 122.802 L 176.518 113.719 Z" fill="url(#paint1_linear)"></path>
+    <path d="M 176.518 148.793 L 176.518 113.293 L 62.203 113.293 L 62.203 149.004 L 132.567 155.557 L 176.518 148.793 Z" fill="url(#paint2_linear)"></path>
+    <path d="M 70.018 148.793 L 34.518 160.631 L 34.518 113.293 L 70.018 113.293 L 70.018 148.793 Z" fill="url(#paint3_linear)"></path>
+    <path d="M 70.018 148.793 L 64.525 165.696 L 70.018 184.293 L 141.018 184.293 L 176.518 148.793 L 70.018 148.793 Z" fill="url(#paint4_linear)"></path>
+    <path d="M 70.018 184.293 L 41.197 184.293 C 37.5 184.293 34.518 181.316 34.518 177.619 L 34.518 148.793 L 70.018 148.793 L 70.018 184.293 Z" fill="url(#paint5_linear)"></path>
+  </g>
+  <text style="fill: rgb(112, 61, 110); font-family: &quot;Segoe UI&quot;; font-size: 75px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, 272.34436, -22.197533)"><tspan x="224.436" y="140.608">Microsoft Lists</tspan><tspan x="224.436" dy="1em">​</tspan><tspan>Official Docs</tspan></text>
+</svg>

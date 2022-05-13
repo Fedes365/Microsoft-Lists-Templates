@@ -1,0 +1,391 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 756,
+  "width": 1344,
+  "hideSelection": true,
+  "fillHorizontally": false,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "align-items": "flex-start",
+      "background-color": "#E2E2F6",
+      "width": "1344px",
+      "height": "756px",
+      "border-radius": "8px"
+    },
+    "children": [
+      {
+        "elmType": "filepreview",
+        "style": {
+          "box-sizing": "border-box",
+          "height": "540px",
+          "width": "960px",
+          "margin-top": "16px",
+          "margin-left": "16px",
+          "border": "solid 4px #6264A7",
+          "border-radius": "8px",
+          "box-shadow": "2px 2px 2px #bdbbb7"
+        },
+        "attributes": {
+          "src": "[$field_1]"
+        }
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "width": "280px",
+          "height": "540px",
+          "overflow": "auto",
+          "margin-left": "72px",
+          "padding-left": "4px",
+          "margin-top": "16px",
+          "display": "block",
+          "box-shadow": "2px 2px 2px #bdbbb7"
+        },
+        "children": [
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "grid",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_3]",
+              "title": "[$field_2]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_2]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_5] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_5]",
+              "title": "[$field_4]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_4]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_7] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_7]",
+              "title": "[$field_6]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_6]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_9] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_9]",
+              "title": "[$field_8]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_8]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_11] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_11]",
+              "title": "[$field_10]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_10]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_13] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_13]",
+              "title": "[$field_12]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_12]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_15] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_15]",
+              "title": "[$field_14]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_14]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_17] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_17]",
+              "title": "[$field_16]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_16]"
+          },
+          {
+            "elmType": "a",
+            "style": {
+              "box-sizing": "border-box",
+              "border": "solid 2px darkblue",
+              "max-height": "144px",
+              "min-height": "80px",
+              "width": "256px",
+              "display": "=if([$field_19] =='', 'none', 'grid')",
+              "align-items": "center",
+              "padding": "6px 12px",
+              "margin-bottom": "8px",
+              "text-decoration": "none",
+              "border-radius": "4px",
+              "overflow": "hidden",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "href": "[$field_19]",
+              "title": "[$field_18]",
+              "class": "ms-bgColor-white ms-fontColor-blueMid ms-bgColor-sharedCyanBlue10--hover ms-fontColor-white--hover sp-field-bold sp-field-fontSizeLarge"
+            },
+            "txtContent": "[$field_18]"
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "position": "absolute",
+          "top": "596px",
+          "left": "16px",
+          "box-sizing": "border-box",
+          "width": "780px",
+          "display": "=if([$field_20] =='', 'none', 'flex')",
+          "align-items": "center",
+          "margin-top": "0px",
+          "border": "solid 1px grey",
+          "border-radius": "4px",
+          "box-shadow": "2px 2px 2px #bdbbb7"
+        },
+        "children": [
+          {
+            "elmType": "img",
+            "customCardProps": {
+              "formatter": {
+                "elmType": "div",
+                "style": {
+                  "width": "1460px",
+                  "height": "700px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "background-color": "#6264a7"
+                },
+                "children": [
+                  {
+                    "elmType": "filepreview",
+                    "style": {
+                      "box-sizing": "border-box",
+                      "width": "1440px",
+                      "height": "680px",
+                      "padding": "10px",
+                      "background-color": "white"
+                    },
+                    "attributes": {
+                      "src": "[$field_20]"
+                    }
+                  }
+                ]
+              },
+              "openOnEvent": "click",
+              "directionalHint": "bottomCenter",
+              "isBeakVisible": false,
+              "beakStyle": {
+                "backgroundColor": "white"
+              }
+            },
+            "style": {
+              "height": "120px",
+              "width": "300px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "border-radius": "4px",
+              "cursor": "pointer",
+              "flex-shrink": "0"
+            },
+            "attributes": {
+              "src": "https://raw.githubusercontent.com/Fedes365/Microsoft-Lists-Templates/main/Elearning-Platform/Banner-Quiz.png"
+            }
+          },
+          {
+            "elmType": "div",
+            "customCardProps": {
+              "formatter": {
+                "elmType": "div",
+                "style": {
+                  "width": "1460px",
+                  "height": "700px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "background-color": "#6264a7"
+                },
+                "children": [
+                  {
+                    "elmType": "filepreview",
+                    "style": {
+                      "box-sizing": "border-box",
+                      "width": "1440px",
+                      "height": "680px",
+                      "padding": "10px",
+                      "background-color": "white"
+                    },
+                    "attributes": {
+                      "src": "[$field_20]"
+                    }
+                  }
+                ]
+              },
+              "openOnEvent": "click",
+              "directionalHint": "bottomCenter",
+              "isBeakVisible": false,
+              "beakStyle": {
+                "backgroundColor": "white"
+              }
+            },
+            "style": {
+              "box-sizing": "border-box",
+              "height": "120px",
+              "width": "480px",
+              "display": "flex",
+              "align-items": "center",
+              "border-radius": "0px 4px 4px 0px",
+              "padding-left": "16px",
+              "padding-right": "8px",
+              "text-decoration": "none",
+              "font-size": "26px",
+              "font-weight": "bold",
+              "cursor": "pointer"
+            },
+            "attributes": {
+              "class": "ms-bgColor-white sp-css-color-black ms-bgColor-teal--hover ms-fontColor-white--hover"
+            },
+            "txtContent": "[$field_21]"
+          }
+        ]
+      }
+    ]
+  }
+}

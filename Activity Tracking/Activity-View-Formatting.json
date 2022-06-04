@@ -1,0 +1,840 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "hideSelection": true,
+  "hideListHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "padding": "20px 5px 20px 5px",
+      "margin-left": "30px",
+      "width": "960px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "height": "194px",
+          "width": "960px",
+          "border-radius": "8px",
+          "box-shadow": "0px 2px 5px 2px #e3e3e3",
+          "display": "block"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "display": "flex",
+              "justify-content": "space-between",
+              "border-radius": "8px 8px 0px 0px",
+              "background-color": "#E2E2F6"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "inlineEditField": "[$Title]",
+                "style": {
+                  "box-sizing": "border-box",
+                  "height": "36px",
+                  "min-width": "300px",
+                  "border-radius": "8px 8px 0px 0px",
+                  "padding-top": "6px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "text-overflow": "ellipsis",
+                  "overflow": "hidden",
+                  "white-space": "nowrap",
+                  "cursor": "pointer"
+                },
+                "attributes": {
+                  "class": "sp-field-fontSizeLarge sp-css-color-DarkPurpleText sp-field-bold"
+                },
+                "txtContent": "[$Title]"
+              },
+              {
+                "elmType": "div",
+                "customRowAction": {
+                  "action": "defaultClick"
+                },
+                "style": {
+                  "width": "32px",
+                  "height": "32px",
+                  "margin-right": "8px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "17px",
+                  "cursor": "pointer"
+                },
+                "attributes": {
+                  "class": "sp-css-color-DarkPurpleText",
+                  "iconName": "ChromeFullScreen",
+                  "title": "Open item pane"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "inlineEditField": "[$DESCRIPTION]",
+            "style": {
+              "display": "=if([$DESCRIPTION] =='', 'flex', '')",
+              "align-items": "=if([$DESCRIPTION] =='', 'center', '')",
+              "line-height": "1.33",
+              "overflow": "hidden",
+              "box-sizing": "border-box",
+              "width": "960px",
+              "height": "100px",
+              "padding-top": "=if([$DESCRIPTION] =='', '', '2.5px')",
+              "padding-left": "10px",
+              "padding-right": "10px",
+              "cursor": "pointer",
+              "border-bottom": "solid 1.5px #dbdbdb"
+            },
+            "attributes": {
+              "class": "sp-field-fontSizeMedium sp-css-color-BlackText sp-css-backgroundColor-BgWhite"
+            },
+            "customCardProps": {
+              "formatter": {
+                "elmType": "div",
+                "style": {
+                  "width": "900px",
+                  "min-height": "160px",
+                  "background-color": "#fafaff",
+                  "padding": "8px 16px 8px 16px",
+                  "border": "solid 2px #6264a7",
+                  "border-radius": "4px 4px"
+                },
+                "txtContent": "[$DESCRIPTION]",
+                "attributes": {
+                  "class": "sp-field-fontSizeLarge sp-css-color-BlackText"
+                }
+              },
+              "openOnEvent": "hover",
+              "directionalHint": "bottomCenter",
+              "isBeakVisible": true,
+              "beakStyle": {
+                "backgroundColor": "#6264a7"
+              }
+            },
+            "txtContent": "=if([$DESCRIPTION] =='', 'Click here to write a description.', [$DESCRIPTION])"
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "height": "46px",
+              "display": "flex",
+              "margin-top": "6px",
+              "margin-left": "16px",
+              "align-items": "center",
+              "justify-content": "flex-start"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "inlineEditField": "[$PEOPLE]",
+                "style": {
+                  "box-sizing": "border-box",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "width": "=if(length([$PEOPLE]) ==0, '108px', '136px')",
+                  "height": "=if(length([$PEOPLE]) ==0, '30px', '40px')",
+                  "border-radius": "6px",
+                  "margin-left": "=if(length([$PEOPLE]) ==0, '6px', '')",
+                  "margin-right": "=if(length([$PEOPLE]) ==0, '22px', '')",
+                  "cursor": "pointer",
+                  "font-size": "=if(length([$PEOPLE]) > 0, '', '20px')",
+                  "box-shadow": "=if(length([$PEOPLE]) ==0, '0px 1px 6px 1px #bdbbb7', '')"
+                },
+                "attributes": {
+                  "iconName": "=if(length([$PEOPLE]) > 0, '', 'People')",
+                  "class": "=if(length([$PEOPLE]) == 0, 'ms-fontColor-gray110', '')",
+                  "title": "=if(length([$PEOPLE]) == 0, 'Select users', '')"
+                },
+                "children": [
+                  {
+                    "forEach": "personIterator in [$PEOPLE]",
+                    "elmType": "div",
+                    "style": {
+                      "width": "34px",
+                      "height": "34px",
+                      "overflow": "hidden",
+                      "border-radius": "50%",
+                      "margin": "10px 6px 10px 0px",
+                      "display": "=if(loopIndex('personIterator') >= 3, 'none', '')",
+                      "box-shadow": "0px 2px 5px 1px #bdbbb7"
+                    },
+                    "children": [
+                      {
+                        "elmType": "img",
+                        "attributes": {
+                          "src": "='/_layouts/15/userphoto.aspx?size=S&accountname=' + [$personIterator.email]"
+                        },
+                        "style": {
+                          "position": "relative",
+                          "top": "50%",
+                          "left": "50%",
+                          "width": "100%",
+                          "height": "auto",
+                          "margin-left": "-50%",
+                          "margin-top": "-50%",
+                          "display": "=if(length([$PEOPLE]) > 2 && loopIndex('personIterator') >= 2, 'none', '')"
+                        },
+                        "defaultHoverField": "[$personIterator]"
+                      },
+                      {
+                        "elmType": "div",
+                        "attributes": {
+                          "title": "=join([$PEOPLE.title], ', ')",
+                          "class": "sp-css-backgroundColor-BgViolet sp-css-color-DarkPurpleText sp-field-bold"
+                        },
+                        "style": {
+                          "width": "100%",
+                          "height": "100%",
+                          "text-align": "center",
+                          "line-height": "30px",
+                          "font-size": "14px",
+                          "display": "=if(length([$PEOPLE]) > 2 && loopIndex('personIterator') == 2, '', 'none')"
+                        },
+                        "children": [
+                          {
+                            "elmType": "span",
+                            "txtContent": "='+' + toString(length([$PEOPLE]) - (2))",
+                            "defaultHoverField": "[$person]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "height": "36px",
+                  "box-sizing": "border-box",
+                  "margin-right": "18px",
+                  "border-left": "solid 2px lightgrey"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "children": [
+                  {
+                    "inlineEditField": "[$STATUS]",
+                    "elmType": "div",
+                    "style": {
+                      "box-sizing": "border-box",
+                      "padding": "4px 8px 5px 8px",
+                      "display": "flex",
+                      "justify-content": "center",
+                      "align-items": "center",
+                      "border-radius": "6px",
+                      "height": "32px",
+                      "margin": "0px 4px 0px 4px",
+                      "background-color": "=if([$STATUS] =='In progress', '#449af9', if([$STATUS] =='Completed', '#0bbc86', if([$STATUS] =='Planned', '#ffc800', if([$STATUS] =='Rejected', '#d62964', '#ffffff'))))",
+                      "box-shadow": "=if([$STATUS] =='', '0px 1px 6px 1px #bdbbb7', '')",
+                      "cursor": "pointer"
+                    },
+                    "attributes": {
+                      "class": "=if([$STATUS] =='', 'ms-fontColor-gray110 sp-field-bold', 'sp-css-color-WhiteFont sp-field-fontSizeMedium sp-field-bold')"
+                    },
+                    "txtContent": "=if([$STATUS] =='', 'Select status', [$STATUS])"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "height": "36px",
+                  "box-sizing": "border-box",
+                  "margin-left": "18px",
+                  "margin-right": "18px",
+                  "border-left": "solid 2px lightgrey"
+                }
+              },
+              {
+                "elmType": "div",
+                "customRowAction": {
+                  "action": "setValue",
+                  "actionInput": {
+                    "FAVOURITE": "=if([$FAVOURITE] =='', 'Favourite' , '')"
+                  }
+                },
+                "attributes": {
+                  "iconName": "=if([$FAVOURITE] =='Favourite', 'FavoriteStarFill', 'FavoriteStar')",
+                  "class": "sp-css-color-DarkPurpleText",
+                  "title": "=if([$FAVOURITE] =='Favourite', 'Remove from favorites', 'Add to favorites')"
+                },
+                "style": {
+                  "box-sizing": "border-box",
+                  "width": "32px",
+                  "height": "32px",
+                  "margin-right": "8px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "21px",
+                  "cursor": "pointer"
+                }
+              },
+              {
+                "elmType": "div",
+                "customRowAction": {
+                  "action": "defaultClick"
+                },
+                "style": {
+                  "box-sizing": "border-box",
+                  "width": "32px",
+                  "height": "32px",
+                  "padding-top": "3px",
+                  "margin-right": "8px",
+                  "display": "=if([$Attachments] == '0', 'none', 'flex')",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "20px",
+                  "cursor": "pointer"
+                },
+                "attributes": {
+                  "class": "sp-css-color-DarkPurpleText",
+                  "iconName": "Attach",
+                  "title": "='This item has ' + [$ATTACHMENTS_NUMBER] + if([$ATTACHMENTS_NUMBER] ==1, ' attachment', ' attachments')"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "style": {
+                      "border-size": "border-box",
+                      "display": "flex",
+                      "align-items": "center",
+                      "justify-content": "center",
+                      "position": "absolute",
+                      "width": "16px",
+                      "height": "14px",
+                      "border": "solid 0.5px black",
+                      "border-radius": "3px",
+                      "background-color": "#dedfff",
+                      "margin-bottom": "20px",
+                      "margin-left": "24px",
+                      "font-family": "sans-serif",
+                      "font-size": "10px",
+                      "font-weight": "600",
+                      "color": "black"
+                    },
+                    "txtContent": "[$ATTACHMENTS_NUMBER]"
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "customRowAction": {
+                  "action": "share"
+                },
+                "style": {
+                  "box-sizing": "border-box",
+                  "width": "32px",
+                  "height": "32px",
+                  "padding-top": "3px",
+                  "margin-right": "8px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "21px",
+                  "cursor": "pointer"
+                },
+                "attributes": {
+                  "class": "sp-css-color-DarkPurpleText",
+                  "iconName": "Share",
+                  "title": "Share item"
+                }
+              },
+              {
+                "elmType": "div",
+                "customRowAction": {
+                  "action": "delete"
+                },
+                "style": {
+                  "width": "32px",
+                  "height": "32px",
+                  "border-radius": "6px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "cursor": "pointer",
+                  "font-size": "19px"
+                },
+                "attributes": {
+                  "class": "sp-css-color-DarkPurpleText ms-bgColor-severeWarning--hover",
+                  "iconName": "Trash",
+                  "title": "Delete item"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "height": "36px",
+                  "box-sizing": "border-box",
+                  "margin-left": "18px",
+                  "margin-right": "18px",
+                  "border-left": "solid 2px lightgrey"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "https://www.office.com/launch/word?auth=2",
+                      "title": "Open the Word Office Hub",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "34px",
+                      "height": "34px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "34px",
+                      "height": "34px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/word_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "https://www.office.com/launch/excel?auth=2",
+                      "title": "Open the Excel Office Hub",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "34px",
+                      "height": "34px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "34px",
+                      "height": "34px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/excel_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "https://www.office.com/launch/powerpoint?auth=2",
+                      "title": "Open the PowerPoint Office Hub",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "34px",
+                      "height": "34px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "34px",
+                      "height": "34px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/powerpoint_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "https://outlook.office.com/mail/",
+                      "title": "Open Outlook Web",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "34px",
+                      "height": "34px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "34px",
+                      "height": "34px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/outlook_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "=replace(@currentWeb, '.sharepoint.com/sites/gruppotest', '-my.sharepoint.com')",
+                      "title": "Open your OneDrive",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "38px",
+                      "height": "38px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "38px",
+                      "height": "38px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/onedrive_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "margin-right": "18px"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "attributes": {
+                      "href": "@currentWeb",
+                      "title": "Go to the team site",
+                      "target": "_blank"
+                    },
+                    "style": {
+                      "width": "38px",
+                      "height": "38px",
+                      "position": "absolute",
+                      "text-decoration": "none"
+                    }
+                  },
+                  {
+                    "elmType": "img",
+                    "style": {
+                      "width": "38px",
+                      "height": "38px"
+                    },
+                    "attributes": {
+                      "src": "https://static2.sharepointonline.com/files/fabric-cdn-prod_20200430.002/assets/brand-icons/product/svg/sharepoint_48x1.svg"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "height": "36px",
+                  "margin-right": "18px",
+                  "box-sizing": "border-box",
+                  "border-left": "solid 2px lightgrey"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "box-sizing": "border-box",
+                  "width": "32px",
+                  "height": "32px",
+                  "padding-top": "7px",
+                  "margin-right": "18px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "26px",
+                  "color": "#6264a7",
+                  "cursor": "pointer"
+                },
+                "attributes": {
+                  "iconName": "InfoSolid",
+                  "title": "Click to check item info"
+                },
+                "customCardProps": {
+                  "formatter": {
+                    "elmType": "div",
+                    "style": {
+                      "padding": "20px 20px 20px 20px"
+                    },
+                    "children": [
+                      {
+                        "elmType": "div",
+                        "children": [
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "min-width": "250px",
+                              "font-size": "16px",
+                              "font-weight": "700",
+                              "margin-bottom": "5px"
+                            },
+                            "txtContent": "Item info"
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "min-width": "250px",
+                              "font-size": "12px",
+                              "font-weight": "200",
+                              "margin-bottom": "10px",
+                              "padding-bottom": "10px",
+                              "border-bottom": "1px solid #e5e5e5"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "children": [
+                              {
+                                "elmType": "div",
+                                "children": [
+                                  {
+                                    "elmType": "img",
+                                    "style": {
+                                      "width": "12px",
+                                      "height": "12px",
+                                      "border-radius": "50%",
+                                      "margin-right": "5px"
+                                    },
+                                    "attributes": {
+                                      "src": "=getUserImage([$Author.email], 'S')",
+                                      "title": "[$Author.title]"
+                                    }
+                                  },
+                                  {
+                                    "elmType": "span",
+                                    "txtContent": "[$Author.title]",
+                                    "style": {
+                                      "font-size": "14px",
+                                      "font-weight": "700"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "elmType": "div",
+                                "style": {
+                                  "font-size": "12px",
+                                  "font-weight": "500"
+                                },
+                                "txtContent": "='Created: ' + toLocaleString([$Created])"
+                              },
+                              {
+                                "elmType": "div",
+                                "style": {
+                                  "box-sizing": "border-box",
+                                  "margin-top": "5px"
+                                },
+                                "children": [
+                                  {
+                                    "elmType": "img",
+                                    "style": {
+                                      "width": "12px",
+                                      "height": "12px",
+                                      "border-radius": "50%",
+                                      "margin-right": "5px"
+                                    },
+                                    "attributes": {
+                                      "src": "=getUserImage([$Editor.email], 'S')",
+                                      "title": "[$Editor.title]"
+                                    }
+                                  },
+                                  {
+                                    "elmType": "span",
+                                    "txtContent": "[$Editor.title]",
+                                    "style": {
+                                      "font-size": "14px",
+                                      "font-weight": "700"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "elmType": "div",
+                                "style": {
+                                  "font-size": "12px",
+                                  "font-weight": "500"
+                                },
+                                "txtContent": "='Updated: ' + toLocaleString([$Modified])"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "openOnEvent": "click",
+                  "directionalHint": "rightCenter",
+                  "isBeakVisible": true,
+                  "beakStyle": {
+                    "backgroundColor": "white"
+                  }
+                }
+              },
+              {
+                "elmType": "a",
+                "style": {
+                  "box-sizing": "border-box",
+                  "width": "32px",
+                  "height": "32px",
+                  "padding-top": "7px",
+                  "display": "flex",
+                  "align-items": "center",
+                  "justify-content": "center",
+                  "font-size": "26px",
+                  "color": "#6264a7",
+                  "cursor": "pointer",
+                  "text-decoration": "none"
+                },
+                "attributes": {
+                  "iconName": "History",
+                  "href": "=@currentWeb + '/_layouts/15/versions.aspx?List=%7B7eb15ed5-e507-4f28-8d80-ff0311ef5b11%7D&ID=' + [$ID] + '&IsDlg=0'",
+                  "target": "_self",
+                  "title": "Check version history"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "groupProps": {
+    "headerFormatter": {
+      "elmType": "div",
+      "style": {
+        "height": "50px",
+        "width": "910px",
+        "display": "flex",
+        "justify-content": "center"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "padding": "6px 12px 6px 12px",
+            "border-radius": "50px",
+            "cursor": "pointer",
+            "background-color": "#6264a7",
+            "z-index": "1"
+          },
+          "attributes": {
+            "class": "ms-fontColor-white sp-field-fontSizeLarge sp-field-bold"
+          },
+          "txtContent": "@group.fieldData.displayValue"
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "width": "900px",
+            "border": "1px solid #6264a7",
+            "background-color": "#6264a7",
+            "position": "absolute"
+          }
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "box-sizing": "border-box",
+            "display": "flex",
+            "align-items": "center",
+            "justify-content": "center",
+            "width": "34px",
+            "height": "34px",
+            "border": "solid 2px #6264a7",
+            "border-radius": "50px",
+            "background-color": "#F4F4FC",
+            "position": "absolute",
+            "left": "960px"
+          },
+          "attributes": {
+            "class": "sp-field-bold sp-css-color-DarkPurpleText sp-field-fontSizeXLarge"
+          },
+          "txtContent": "@group.count"
+        }
+      ]
+    }
+  }
+}

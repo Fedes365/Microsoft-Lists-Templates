@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "flex-wrap": "wrap",
+    "display": "flex"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "style": {
+        "box-sizing": "border-box",
+        "padding": "4px 8px 5px 8px",
+        "display": "flex",
+        "border-radius": "6px",
+        "height": "28px",
+        "align-items": "center",
+        "white-space": "nowrap",
+        "overflow": "hidden",
+        "margin": "4px 4px 4px 4px",
+        "background-color": "=if(@currentField =='In progress', '#449af9', if(@currentField =='Completed', '#0bbc86', if(@currentField =='Planned', '#ffc800', if(@currentField =='Rejected', '#d62964', ''))))"
+      },
+      "attributes": {
+        "class": "sp-css-color-WhiteFont sp-field-fontSizeMedium sp-field-bold"
+      },
+      "txtContent": "[$STATUS]"
+    }
+  ]
+}

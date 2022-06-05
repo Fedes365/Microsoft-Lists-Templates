@@ -770,7 +770,7 @@
                 },
                 "attributes": {
                   "iconName": "History",
-                  "href": "=@currentWeb + '/_layouts/15/versions.aspx?List=%7B' + 'YOUR LIST ID' + '%7D&ID=' + [$ID] + '&IsDlg=0'",
+                  "href": "=@currentWeb + '/_layouts/15/versions.aspx?List=' + 'YOUR LIST ID' + '&ID=' + [$ID] + '&IsDlg=0'",
                   "target": "_blank",
                   "title": "Check version history"
                 }

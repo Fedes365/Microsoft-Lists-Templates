@@ -1,0 +1,323 @@
+{ 
+"$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "block",
+      "width": "100%",
+      "position": "sticky"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "100%",
+          "display": "=if(@rowIndex == 0, 'flex', 'none')",
+          "height": "4em",
+          "border-top": "solid 1px #abadb0",
+          "border-top-left-radius": "3px",
+          "border-top-right-radius": "3px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "txtContent": "[$ProjectName]",
+            "style": {
+              "width": "220px",
+              "text-align": "left",
+              "padding-left": "12px",
+              "padding-top": "10px",
+              "font-weight": "bold",
+              "box-sizing": "border-box",
+              "background-color": "#ffd06b",
+              "border-radius": "6px 0 0 6px"
+            },
+            "attributes": {
+              "class": "ms-fontSize-18"
+            }
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1",
+              "height": "48px",
+              "border-radius": "0 6px 6px 0",
+              "font-weight": "bold"
+            },
+            "attributes": {
+              "class": "ms-fontSize-14 ms-bgColor-gray20"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "txtContent": "=toLocaleDateString([$ProjectStart])",
+                "style": {
+                  "position": "absolute",
+                  "padding": "20px 6px 0px 6px",
+                  "height": "28px",
+                  "margin-top": "0px",
+                  "background-color": "#2a9e24",
+                  "color": "white",
+                  "border-radius": "3px 3px 3px 3px"
+                },
+                "attributes": {
+                  "title": "=toLocaleDateString([$ProjectStart])"
+                }
+              },
+              {
+                "elmType": "span",
+                "txtContent": "=toLocaleDateString([$ProjectDue])",
+                "style": {
+                  "position": "absolute",
+                  "margin-top": "0px",
+                  "padding": "20px 6px 0px 6px",
+                  "height": "28px",
+                  "right": "0px",
+                  "background-color": "#c93530",
+                  "color": "white",
+                  "border-radius": "3px 3px 3px 3px"
+                },
+                "attributes": {
+                  "title": "=toLocaleDateString([$ProjectDue])"
+                }
+              },
+              {
+                "elmType": "span",
+                "txtContent": "=toLocaleDateString( @now)",
+                "style": {
+                  "position": "relative",
+                  "padding-left": "6px",
+                  "margin-left": "0px",
+                  "top": "-0.5px",
+                  "width": "100px",
+                  "font-size": "1em",
+                  "z-index": "100",
+                  "display": "=if( [$ProjectDue] < @now , 'none', 'block')",
+                  "left": "=(Number(@now)-Number([$ProjectStart])) /  (Number([$ProjectDue])-Number([$ProjectStart]))  * 100 + '%' ",
+                  "background-color": "white",
+                  "border": "solid 1px black",
+                  "border-radius": "0 3px 3px 0"
+                }
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "background-color": "darkgrey",
+                  "display": "=if( [$ProjectDue] < @now , 'none', 'block')",
+                  "top": "-0.5px",
+                  "height": "800px",
+                  "width": "2.5px",
+                  "position": "relative",
+                  "left": "=(Number(@now)-Number([$ProjectStart])) /  (Number([$ProjectDue])-Number([$ProjectStart]))  * 100 + '%' ",
+                  "margin-left": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "width": "100%",
+          "display": "flex",
+          "margin-top": "10px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "height": "80px",
+              "width": "220px",
+              "display": "flex"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "style": {
+                  "width": "28px",
+                  "height": "63px",
+                  "box-sizing": "border-box",
+                  "border-radius": "6px 0 0 6px",
+                  "border-top": "1px solid red",
+                  "border-bottom": "1px solid red",
+                  "border-left": "1px solid red",
+                  "padding-top": "8px",
+                  "padding-left": "8px",
+                  "color": "=if( [$Progress] == 1, '#107c10' ,if( [$TaskDue] > [$ProjectDue] ,'#a80000', if( [$TaskStart]> @now, '#000000', if( [$TaskDue]< @now, '#a80000', '#407ecf') ) ) )"
+                },
+                "attributes": {
+                  "iconName": "=if( [$Progress] == 1, 'CompletedSolid' ,if( [$TaskDue] > [$ProjectDue] ,'UnknownSolid', if( [$TaskStart]> @now, 'DoubleChevronRight8', if( [$TaskDue]< @now, 'AlertSolid', 'StatusCircleOuter') ) ) )",
+                  "title": "=(Number[$Progress]) * 100 + '%'",
+                  "class": "ms-fontSize-18 ms-bgColor-gray20"
+                }
+              },
+              {
+                "elmType": "button",
+                "txtContent": "[$Title]",
+                "customRowAction": {
+                  "action": "editProps"
+                },
+                "style": {
+                  "width": "192px",
+                  "height": "63px",
+                  "padding-left": "10px",
+                  "padding-bottom": "30px",
+                  "border-top": "1px solid red",
+                  "border-bottom": "1px solid red",
+                  "border-left": "none",
+                  "border-right": "none",
+                  "cursor": "pointer",
+                  "text-decoration": "none",
+                  "text-align": "left",
+                  "outline": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "font-size": "14px"
+                },
+                "attributes": {
+                  "title": "[$Title]",
+                  "class": "sp-field-bold ms-fontColor-sharedRedOrange10--hover ms-bgColor-gray20"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1",
+              "position": "relative",
+              "height": "62px",
+              "border-bottom-style": "dotted",
+              "border-width": "0px 0 1px 0"
+            },
+            "attributes": {
+              "class": "ms-borderColor-neutralTertiary"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "txtContent": "",
+                "style": {
+                  "position": "absolute",
+                  "box-sizing": "border-box",
+                  "display": "flex",
+                  "border-radius": "4px",
+                  "z-index": "1",
+                  "top": "10px",
+                  "height": "3em",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "padding": "0.35em 0.2em 0 0.4em",
+                  "border": "1px solid",
+                  "border-color": "=if( [$Progress] == 1, '#107c10' ,if( [$TaskDue] > [$ProjectDue] ,'#a80000', if( [$TaskStart]> @now, '#d0d4d8', if( [$TaskDue]< @now, '#a80000', '#699de0') ) ) )",
+                  "background-color": "=if( [$Progress] == 1, '#ccffcc' ,if( [$TaskDue] > [$ProjectDue] ,'#ffb8b8', if( [$TaskStart]> @now, '#dbe2ea', if( [$TaskDue]< @now, '#ffb8b8', '#bfdbff') ) ) )",
+                  "left": "=  (Number([$TaskStart])-Number([$ProjectStart])) / (Number([$ProjectDue])-Number([$ProjectStart])) * 100  + '%'",
+                  "width": "= if( [$TaskDue] > [$ProjectDue],  (Number([$ProjectDue])-Number([$TaskStart])+ 86400000) / (Number([$ProjectDue])-Number([$ProjectStart])+ 86400000) * 100  ,  (Number([$TaskDue])-Number([$TaskStart])+ 86400000) / (Number([$ProjectDue])-Number([$ProjectStart])+ 86400000) * 100 ) + '%'"
+                },
+                "attributes": {
+                  "class": "sp-field-bold",
+                  "title": "=[$Title] + ' - ' + toLocaleDateString([$TaskStart]) + ' - ' + toLocaleDateString([$TaskDue])"
+                }
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "position": "absolute",
+                  "box-sizing": "border-box",
+                  "display": "flex",
+                  "border-radius": "4px",
+                  "z-index": "2",
+                  "top": "10px",
+                  "height": "3em",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "padding": "0.35em 0.2em 0 0.4em",
+                  "border": "1px solid",
+                  "border-color": "=if( [$Progress] == 1, '#107c10' ,if( [$TaskDue] > [$ProjectDue] ,'#a80000', if( [$TaskStart]> @now, '#d0d4d8', if( [$TaskDue]< @now, '#a80000', '#699de0') ) ) )",
+                  "background-color": "=if( [$Progress] == 1, '#8de3a1' ,if( [$TaskDue] > [$ProjectDue] ,'#e38a8a', if( [$TaskStart]> @now, '#dbe2ea', if( [$TaskDue]< @now, '#e38a8a', '#8fb7eb') ) ) )",
+                  "left": "=  (Number([$TaskStart])-Number([$ProjectStart])) / (Number([$ProjectDue])-Number([$ProjectStart])) * 100  + '%'",
+                  "width": "= if( [$TaskDue] > [$ProjectDue],  ((Number([$ProjectDue])-Number([$TaskStart])+ 86400000) / (Number([$ProjectDue])-Number([$ProjectStart])+ 86400000) * 100) * [$Progress] + '%'  ,  ((Number([$TaskDue])-Number([$TaskStart])+ 86400000) / (Number([$ProjectDue])-Number([$ProjectStart])+ 86400000) * 100 * [$Progress]) + '%'"
+                },
+                "attributes": {
+                  "class": "sp-field-bold",
+                  "title": "=[$Title] + ' - ' + toLocaleDateString([$TaskStart]) + ' - ' + toLocaleDateString([$TaskDue])"
+                }
+              },
+              {
+                "elmType": "div",
+                "txtContent": "=(Number[$Progress]) * 100 + '%'",
+                "style": {
+                  "position": "absolute",
+                  "box-sizing": "border-box",
+                  "z-index": "3",
+                  "top": "16px",
+                  "height": "24px",
+                  "margin-left": "10px",
+                  "left": "=  (Number([$TaskDue])-Number([$ProjectStart])) / (Number([$ProjectDue])-Number([$ProjectStart])) * 100  + '%'",
+                  "width": "40px"
+                },
+                "attributes": {
+                  "class": "sp-field-bold ms-fontSize-14"
+                }
+              },
+              {
+                "elmType": "div",
+                "txtContent": "=toLocaleDateString([$TaskDue])",
+                "style": {
+                  "position": "absolute",
+                  "box-sizing": "border-box",
+                  "display": "block",
+                  "z-index": "2",
+                  "top": "44px",
+                  "height": "1.6em",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "padding": "0.1em 0em 0em 0em",
+                  "text-align": "center",
+                  "color": "white",
+                  "background-color": "#b03531",
+                  "left": "-110px",
+                  "width": "110px"
+                },
+                "attributes": {
+                  "class": "sp-field-bold",
+                  "title": "=toLocaleDateString([$TaskDue])"
+                }
+              },
+              {
+                "elmType": "div",
+                "txtContent": "=toLocaleDateString([$TaskStart])",
+                "style": {
+                  "position": "absolute",
+                  "box-sizing": "border-box",
+                  "display": "block",
+                  "border-radius": "0px 0px 0px 6px",
+                  "z-index": "3",
+                  "top": "44px",
+                  "left": "-220px",
+                  "height": "1.6em",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "padding": "0.1em 0em 0em 0em",
+                  "text-align": "center",
+                  "color": "white",
+                  "background-color": "#2a9e24",
+                  "width": "110px"
+                },
+                "attributes": {
+                  "class": "sp-field-bold",
+                  "title": "=toLocaleDateString([$TaskStart])"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

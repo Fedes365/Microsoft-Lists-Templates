@@ -545,7 +545,7 @@
                   {
                     "elmType": "a",
                     "attributes": {
-                      "href": "=replace(@currentWeb, '.sharepoint.com/sites/gruppotest', '-my.sharepoint.com')",
+                      "href": "https://www.office.com/launch/onedrive",
                       "title": "Open your OneDrive",
                       "target": "_blank"
                     },

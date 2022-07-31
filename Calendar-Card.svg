@@ -1,0 +1,59 @@
+<svg viewBox="0 0 280 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="810.142" y="243.284" width="100" height="100"></bx:grid>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="140" y1="0" x2="140" y2="200.024" id="gradient-0" gradientTransform="matrix(-0.002932, 0.999996, -1.399832, 0.000952, 280.410423, -34.205211)">
+      <stop offset="0" style="stop-color: rgb(216, 156, 184);"></stop>
+      <stop offset="1" style="stop-color: rgb(140, 39, 165);"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="400" rx="4" ry="4" style="fill: rgb(255, 255, 255); stroke: rgb(151, 144, 144);"></rect>
+  <path d="M 4 0 L 276 0 C 278.209 0 280 1.791 280 4 L 280 199.981 C 280 199.983 276.008 200 276 200 L 4 200 C 3.998 200 0 200.026 0 200.024 L 0 4 C 0 1.791 1.791 0 4 0 Z" style="stroke: rgba(0, 0, 0, 0); fill: url(#gradient-0);"></path>
+  <g transform="matrix(0.298235, 0, 0, 0.298235, 63.65168, 22.190239)">
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="485.176" y2="153.527">
+      <stop offset="0" stop-color="#e2dec3"></stop>
+      <stop offset="0.9944" stop-color="#fff"></stop>
+    </linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="lg1">
+      <stop offset="0" stop-color="#fe652b"></stop>
+      <stop offset="1" stop-color="#ffff49"></stop>
+    </linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="276.114" y2="230.586" xlink:href="#lg1"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="lg2">
+      <stop offset="0" stop-color="#f80314"></stop>
+      <stop offset="1" stop-color="#fed59c"></stop>
+    </linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="385.047" x2="385.047" y1="276.114" y2="230.586" xlink:href="#lg2"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="126.954" x2="126.954" y1="353.475" y2="307.947" xlink:href="#lg2"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="353.475" y2="307.947" xlink:href="#lg1"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="385.047" x2="385.047" y1="353.475" y2="307.947" xlink:href="#lg2"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="126.954" x2="126.954" y1="430.836" y2="385.308" xlink:href="#lg2"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="430.836" y2="385.308" xlink:href="#lg1"></linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="153.51" y2="26.826" xlink:href="#lg1"></linearGradient>
+    <g xmlns="http://www.w3.org/2000/svg" id="_x33_0_Calendar">
+      <g>
+        <path d="m483.315 153.527v298.277c0 18.425-14.947 33.372-33.372 33.372h-387.886c-18.425 0-33.372-14.947-33.372-33.372v-298.277z" fill="url(#SVGID_1_)" data-original="url(#SVGID_1_)"></path>
+        <path d="m209.307 230.586h93.387v45.528h-93.387z" fill="url(#SVGID_2_)" data-original="url(#SVGID_2_)"></path>
+        <path d="m338.353 230.586h93.387v45.528h-93.387z" fill="url(#SVGID_3_)" data-original="url(#SVGID_3_)"></path>
+        <path d="m80.26 307.947h93.387v45.528h-93.387z" fill="url(#SVGID_4_)" data-original="url(#SVGID_4_)"></path>
+        <path d="m209.307 307.947h93.387v45.528h-93.387z" fill="url(#SVGID_5_)" data-original="url(#SVGID_5_)"></path>
+        <path d="m338.353 307.947h93.387v45.528h-93.387z" fill="url(#SVGID_6_)" data-original="url(#SVGID_6_)"></path>
+        <path d="m80.26 385.308h93.387v45.528h-93.387z" fill="url(#SVGID_7_)" data-original="url(#SVGID_7_)"></path>
+        <path d="m209.307 385.308h93.387v45.528h-93.387z" fill="url(#SVGID_8_)" data-original="url(#SVGID_8_)"></path>
+        <path d="m483.299 153.51v-93.34c0-18.415-14.928-33.344-33.344-33.344h-387.91c-18.415 0-33.344 14.929-33.344 33.344v93.34z" fill="url(#SVGID_9_)" data-original="url(#SVGID_9_)"></path>
+        <g fill="#07028f">
+          <path d="m490.7 60.168c0-22.466-18.279-40.741-40.745-40.741h-387.91c-22.466 0-40.741 18.275-40.741 40.741-.005 112.554-.013 282.293-.018 391.636 0 22.481 18.289 40.77 40.77 40.77h387.889c22.481 0 40.77-18.289 40.77-40.77-.005-109.254-.011-279.084-.015-391.636zm-454.597 0c0-14.308 11.638-25.942 25.942-25.942h387.911c14.308 0 25.945 11.634 25.945 25.942v85.941h-103.356v-13.795c0-4.09-3.313-7.4-7.4-7.4-4.086 0-7.4 3.31-7.4 7.4v13.795h-57.965v-13.795c0-4.09-3.313-7.4-7.4-7.4s-7.4 3.31-7.4 7.4v13.795h-57.965v-13.795c0-4.09-3.313-7.4-7.4-7.4-4.086 0-7.4 3.31-7.4 7.4v13.795h-57.965v-13.795c0-4.09-3.313-7.4-7.4-7.4-4.086 0-7.4 3.31-7.4 7.4v13.795h-103.347zm439.812 391.635c0 14.322-11.652 25.971-25.971 25.971h-387.888c-14.319 0-25.971-11.649-25.971-25.971v-290.874h103.37v13.809c0 4.09 3.313 7.4 7.4 7.4 4.086 0 7.4-3.31 7.4-7.4v-13.809h57.965v13.809c0 4.09 3.313 7.4 7.4 7.4 4.086 0 7.4-3.31 7.4-7.4v-13.809h57.965v13.809c0 4.09 3.313 7.4 7.4 7.4s7.4-3.31 7.4-7.4v-13.809h57.965v13.809c0 4.09 3.313 7.4 7.4 7.4 4.086 0 7.4-3.31 7.4-7.4v-13.809h103.37v290.874z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m302.694 223.19h-93.387c-4.086 0-7.4 3.31-7.4 7.4v45.525c0 4.09 3.313 7.4 7.4 7.4h93.387c4.086 0 7.4-3.31 7.4-7.4v-45.525c-.001-4.091-3.314-7.4-7.4-7.4zm-7.4 45.524h-78.588v-30.726h78.588z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m338.355 223.19c-4.086 0-7.4 3.31-7.4 7.4v45.525c0 4.09 3.313 7.4 7.4 7.4h93.387c4.086 0 7.4-3.31 7.4-7.4v-45.525c0-4.09-3.313-7.4-7.4-7.4zm85.987 45.524h-78.588v-30.726h78.588z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m173.645 300.546h-93.383c-4.086 0-7.4 3.31-7.4 7.4v45.532c0 4.09 3.313 7.4 7.4 7.4h93.384c4.086 0 7.4-3.31 7.4-7.4v-45.532c-.001-4.091-3.314-7.4-7.401-7.4zm-7.399 45.532h-78.585v-30.733h78.584v30.733z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m302.694 300.546h-93.387c-4.086 0-7.4 3.31-7.4 7.4v45.532c0 4.09 3.313 7.4 7.4 7.4h93.387c4.086 0 7.4-3.31 7.4-7.4v-45.532c-.001-4.091-3.314-7.4-7.4-7.4zm-7.4 45.532h-78.588v-30.733h78.588z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m431.742 300.546h-93.387c-4.086 0-7.4 3.31-7.4 7.4v45.532c0 4.09 3.313 7.4 7.4 7.4h93.387c4.086 0 7.4-3.31 7.4-7.4v-45.532c-.001-4.091-3.314-7.4-7.4-7.4zm-7.4 45.532h-78.588v-30.733h78.588z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m173.645 377.909h-93.383c-4.086 0-7.4 3.31-7.4 7.4v45.525c0 4.09 3.313 7.4 7.4 7.4h93.384c4.086 0 7.4-3.31 7.4-7.4v-45.525c-.001-4.091-3.314-7.4-7.401-7.4zm-7.399 45.525h-78.585v-30.726h78.584v30.726z" fill="#000000" data-original="#07028f" class=""></path>
+          <path d="m302.694 377.909h-93.387c-4.086 0-7.4 3.31-7.4 7.4v45.525c0 4.09 3.313 7.4 7.4 7.4h93.387c4.086 0 7.4-3.31 7.4-7.4v-45.525c-.001-4.091-3.314-7.4-7.4-7.4zm-7.4 45.525h-78.588v-30.726h78.588z" fill="#000000" data-original="#07028f" class=""></path>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 34px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, 88.877991, -10.535748)"><tspan x="50.662" y="262.862">Calendar View</tspan><tspan x="50.662" dy="1em">​</tspan><tspan>Formatting</tspan></text>
+  <rect x="72.635" y="320.687" width="134.729" height="48.82" rx="4" ry="4" style="fill: rgb(49, 119, 216); stroke: rgba(0, 0, 0, 0);"></rect>
+  <text style="fill: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 29px; font-weight: 700; white-space: pre;" x="103.393" y="355.335">Open</text>
+</svg>

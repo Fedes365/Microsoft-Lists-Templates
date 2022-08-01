@@ -1,0 +1,51 @@
+<svg viewBox="0 0 722 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="403.124" y1="25" x2="403.124" y2="125" id="gradient-0" gradientTransform="matrix(0.008072, 0.999967, -5.72, 0.034108, 861.745975, -327.650556)">
+      <stop offset="0" style="stop-color: rgb(192, 106, 186);"></stop>
+      <stop offset="0.465" style="stop-color: rgb(146, 81, 142);"></stop>
+      <stop offset="1" style="stop-color: rgb(117, 66, 114);"></stop>
+    </linearGradient>
+  </defs>
+  <rect x="85.723" y="25" width="634.803" height="100" rx="4" ry="4" style="stroke: rgb(82, 80, 80); fill: url(#gradient-0);"></rect>
+  <circle style="stroke: rgb(0, 0, 0); fill: rgb(132, 73, 128);" cx="75" cy="75" r="75"></circle>
+  <circle style="stroke: rgb(0, 0, 0); fill: rgb(236, 236, 236);" cx="75" cy="75" r="67"></circle>
+  <text style="fill: rgb(255, 255, 255); font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 26.087px; font-weight: 700; line-height: 38.2609px; white-space: pre;" transform="matrix(0.92, 0, 0, 0.92, 15.603327, 0.601359)"><tspan x="163.489" y="91.695">Welcome to my Microsoft Lists Templates wiki!</tspan><tspan x="163.489" dy="1em">​</tspan><tspan x="163.489" dy="1em">​</tspan></text>
+  <g transform="matrix(0.92, 0, 0, 0.92, 15.603327, -27.26812)">
+    <path d="M 63.244 97.601 L 113.244 86.161 L 113.244 65.121 C 113.244 62.921 111.484 61.161 109.284 61.161 L 38.244 61.161 L 13.244 86.161 L 63.244 97.601 Z" style=""></path>
+    <polygon points="38.244 86.161 13.244 86.161 13.244 123.201 44.204 110.401" style=""></polygon>
+    <polygon points="72.324 117.841 38.244 111.761 38.244 86.161 113.244 86.161 113.244 111.441" style=""></polygon>
+    <polygon points="82.284 140.921 32.764 136.321 32.764 111.161 113.244 111.161 113.244 136.161" style=""></polygon>
+    <polygon points="38.244 111.161 13.244 111.161 13.244 144.481 38.244 136.161" style=""></polygon>
+    <polygon points="113.244 136.161 88.244 161.161 38.244 161.161 34.404 148.081 38.244 136.161" style=""></polygon>
+    <path d="M 13.244 136.161 L 13.244 155.641 C 13.244 158.681 15.724 161.121 18.764 161.121 L 38.244 161.121 L 38.244 136.121 L 13.244 136.121 L 13.244 136.161 Z" style=""></path>
+  </g>
+  <g transform="matrix(0.9, 0, 0, 0.9, 16.868206, -25.044903)">
+    <path fill="#FEE200" d="M 63.244 97.601 L 113.244 86.161 L 113.244 65.121 C 113.244 62.921 111.484 61.161 109.284 61.161 L 38.244 61.161 L 13.244 86.161 L 63.244 97.601 Z"></path>
+    <polygon fill="url(#SVGID_1_)" points="38.244 86.161 13.244 86.161 13.244 123.201 44.204 110.401"></polygon>
+    <polygon fill="url(#SVGID_2_)" points="72.324 117.841 38.244 111.761 38.244 86.161 113.244 86.161 113.244 111.441"></polygon>
+    <polygon fill="url(#SVGID_3_)" points="82.284 140.921 32.764 136.321 32.764 111.161 113.244 111.161 113.244 136.161"></polygon>
+    <polygon fill="url(#SVGID_4_)" points="38.244 111.161 13.244 111.161 13.244 144.481 38.244 136.161"></polygon>
+    <polygon points="113.244 136.161 88.244 161.161 38.244 161.161 34.404 148.081 38.244 136.161" style="fill: rgb(132, 73, 128);"></polygon>
+    <path fill="url(#SVGID_6_)" d="M 13.244 136.161 L 13.244 155.641 C 13.244 158.681 15.724 161.121 18.764 161.121 L 38.244 161.121 L 38.244 136.121 L 13.244 136.121 L 13.244 136.161 Z"></path>
+  </g>
+  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="38.7" y1="62.5" x2="38.7" y2="122.9034" gradientTransform="matrix(0.4, 0, 0, 0.4, 13.243402, 61.160698)">
+    <stop offset="0" style="stop-color:#DE4A01"></stop>
+    <stop offset="1" style="stop-color:#E15900"></stop>
+  </linearGradient>
+  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="156.25" y1="118.6523" x2="156.25" y2="68.182" gradientTransform="matrix(0.4, 0, 0, 0.4, 13.243402, 61.160698)">
+    <stop offset="0" style="stop-color:#F08B09"></stop>
+    <stop offset="1" style="stop-color:#EB770A"></stop>
+  </linearGradient>
+  <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="149.4" y1="199.4" x2="149.4" y2="125" gradientTransform="matrix(0.4, 0, 0, 0.4, 13.243402, 61.160698)">
+    <stop offset="0" style="stop-color:#D73A00"></stop>
+    <stop offset="1" style="stop-color:#CD2901"></stop>
+  </linearGradient>
+  <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="31.25" y1="183.4025" x2="31.25" y2="128.5908" gradientTransform="matrix(0.4, 0, 0, 0.4, 13.243402, 61.160698)">
+    <stop offset="0" style="stop-color:#BE3106"></stop>
+    <stop offset="1" style="stop-color:#AD3007"></stop>
+  </linearGradient>
+  <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="31.25" y1="249.9" x2="31.25" y2="187.4" gradientTransform="matrix(0.4, 0, 0, 0.4, 13.243402, 61.160698)">
+    <stop offset="0" style="stop-color:#6F3C6D"></stop>
+    <stop offset="1" style="stop-color:#663764"></stop>
+  </linearGradient>
+</svg>

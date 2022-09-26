@@ -1,0 +1,142 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "hideColumnHeader": false,
+  "hideSelection": false,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "box-sizing": "border-box",
+      "height": "100px",
+      "width": "1000px",
+      "border-radius": "6px",
+      "border-left": "4px solid #5b5fc7",
+      "border-bottom": "2px dotted #5b5fc7",
+      "background-color": "#dcdffa",
+      "display": "flex",
+      "flex-wrap": "nowrap",
+      "align-items": "center",
+      "justify-content": "left"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "inlineEditField": "[$CAR_USER]",
+        "style": {
+          "height": "42px",
+          "width": "300px",
+          "margin-left": "16px",
+          "margin-right": "16px",
+          "box-sizing": "border-box",
+          "--inline-editor-border-color": "transparent",
+          "border-radius": "6px",
+          "box-shadow": "2px 2px 0px #6264a7, 3px 3px 3px #9698e3",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center",
+          "font-size": "15px",
+          "cursor": "pointer"
+        },
+        "attributes": {
+          "class": "=if([$CAR_USER] =='', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-neutralTertiary ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-black ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover' )"
+        },
+        "txtContent": "=if([$CAR_USER.title] =='', 'Insert a Car user', [$CAR_USER.title])"
+      },
+      {
+        "elmType": "div",
+        "inlineEditField": "[$CAR_BRAND]",
+        "style": {
+          "height": "42px",
+          "width": "200px",
+          "margin-right": "16px",
+          "box-sizing": "border-box",
+          "--inline-editor-border-color": "transparent",
+          "border-radius": "6px",
+          "box-shadow": "2px 2px 0px #6264a7, 3px 3px 3px #9698e3",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center",
+          "font-size": "15px",
+          "cursor": "pointer"
+        },
+        "attributes": {
+          "class": "=if([$CAR_BRAND] =='', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-neutralTertiary ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-black ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover' )"
+        },
+        "txtContent": "=if([$CAR_BRAND] =='', 'Select a Car Brand', [$CAR_BRAND])"
+      },
+      {
+        "elmType": "div",
+        "inlineEditField": "[$FORD_CAR_MODEL]",
+        "style": {
+          "height": "42px",
+          "width": "200px",
+          "margin-right": "16px",
+          "box-sizing": "border-box",
+          "--inline-editor-border-color": "transparent",
+          "border-radius": "6px",
+          "box-shadow": "2px 2px 0px #6264a7, 3px 3px 3px #9698e3",
+          "display": "=if([$CAR_BRAND] == 'Ford', 'flex', 'none')",
+          "align-items": "center",
+          "justify-content": "center",
+          "font-size": "15px",
+          "cursor": "pointer"
+        },
+        "attributes": {
+          "class": "=if([$FORD_CAR_MODEL] =='', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-neutralTertiary ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-black ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover' )"
+        },
+        "txtContent": "=if([$FORD_CAR_MODEL] =='', 'Select a Ford model', [$FORD_CAR_MODEL])"
+      },
+      {
+        "elmType": "div",
+        "inlineEditField": "[$TOYOTA_CAR_MODEL]",
+        "style": {
+          "height": "42px",
+          "width": "200px",
+          "margin-right": "16px",
+          "box-sizing": "border-box",
+          "--inline-editor-border-color": "transparent",
+          "border-radius": "6px",
+          "box-shadow": "2px 2px 0px #6264a7, 3px 3px 3px #9698e3",
+          "display": "=if([$CAR_BRAND] == 'Toyota', 'flex', 'none')",
+          "align-items": "center",
+          "justify-content": "center",
+          "font-size": "15px",
+          "cursor": "pointer"
+        },
+        "attributes": {
+          "class": "=if([$TOYOTA_CAR_MODEL] =='', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-neutralTertiary ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover', 'sp-field-bold sp-css-backgroundColor-white sp-css-color-black ms-bgColor-sharedBlueMagenta10--hover ms-fontColor-white--hover' )"
+        },
+        "txtContent": "=if([$TOYOTA_CAR_MODEL] =='', 'Select a Toyota model', [$TOYOTA_CAR_MODEL])"
+      },
+      {
+        "elmType": "div",
+        "customRowAction": {
+          "action": "setValue",
+          "actionInput": {
+            "CAR_USER": "",
+            "CAR_BRAND": "",
+            "FORD_CAR_MODEL": "",
+            "TOYOTA_CAR_MODEL": ""
+          }
+        },
+        "style": {
+          "width": "52px",
+          "height": "42px",
+          "margin-right": "16px",
+          "box-sizing": "border-box",
+          "border-radius": "6px",
+          "box-shadow": "2px 2px 0px #c90000, 3px 3px 3px #f04141",
+          "display": "=if([$CAR_BRAND] !='', 'flex', 'none')",
+          "align-items": "center",
+          "justify-content": "center",
+          "font-size": "15px",
+          "cursor": "pointer"
+        },
+        "attributes": {
+          "class": "sp-field-bold sp-css-color-black sp-css-backgroundColor-BgCoral ms-bgColor-sharedRed10--hover ms-fontColor-white--hover",
+          "title": "Clear row data"
+        },
+        "txtContent": "Clear"
+      }
+    ]
+  }
+}

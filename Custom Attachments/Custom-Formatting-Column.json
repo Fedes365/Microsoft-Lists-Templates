@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "display": "=if([$LIST_ATTACHMENTS] =='', 'none', 'flex')",
+    "flex-wrap": "wrap",
+    "justify-content": "",
+    "flex-direction": "row",
+    "align-items": "normal",
+    "white-space": "nowrap"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "forEach": "iteratorName in split([$LIST_ATTACHMENTS],':')",
+      "style": {
+        "height": "30px",
+        "margin": "6px 6px 2px 0px",
+        "border-radius": "20px",
+        "cursor": "pointer"
+      },
+      "attributes": {
+        "class": "ms-bgColor-themeLight ms-bgColor-themePrimary--hover"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "display": "flex",
+            "flex-direction": "row",
+            "justify-content": "normal"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "box-sizing": "border-box",
+                "display": "flex",
+                "align-items": "center",
+                "justify-content": "center",
+                "width": "30px",
+                "height": "30px",
+                "background-color": "white",
+                "border-radius": "50px",
+                "border": "solid 1px black"
+              },
+              "children": [
+                {
+                  "elmType": "img",
+                  "style": {
+                    "width": "20px"
+                  },
+                  "attributes": {
+                    "src": "=if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.pdf', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/pdf.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.docx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.dotx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.doc', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/docx.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.pptx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.potx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.ppt' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.ppsx', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/pptx.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.xlsx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.xlsm' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.xml' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.csv', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/xlsx.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.vsdx' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.vsd' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.vst' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.vss', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/vsdx.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.jpg' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.bmp' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.gif' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.png', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/photo.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.svg' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.eps', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/vector.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.mp4' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.avi' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.webm' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.wmv' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.mkv', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/video.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.mp3' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.flac' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.wav' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.wma' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.ogg', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/audio.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.zip' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.7z' || substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.rar', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/zip.svg', if(substring([$iteratorName], lastIndexOf([$iteratorName], '.'), 700) =='.txt', 'https://res-1.cdn.office.net/files/fabric-cdn-prod_20220825.001/assets/item-types/20/txt.svg', '')))))))))))"
+                  }
+                }
+              ]
+            },
+            {
+              "elmType": "a",
+              "txtContent": "[$iteratorName]",
+              "style": {
+                "display": "flex",
+                "align-items": "center",
+                "overflow": "hidden",
+                "text-overflow": "ellipsis",
+                "margin-top": "0px",
+                "padding": "0 16px 0px 8px",
+                "font-size": "15px",
+                "text-decoration": "none",
+                "border-radius": "20px"
+              },
+              "attributes": {
+                "href": "=@currentWeb + '/Lists/' + 'YOUR-LIST-NAME' + '/Attachments/' + [$ID] + '/' + [$iteratorName] + '?web=1'",
+                "target": "blank",
+                "class": "sp-field-bold ms-fontColor-themeDark ms-fontColor-white--hover"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

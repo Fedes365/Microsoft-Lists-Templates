@@ -71,7 +71,7 @@
                 "border-radius": "20px"
               },
               "attributes": {
-                "href": "=@currentWeb + '/Lists/' + 'YOUR-LISTNAME' + '/Attachments/' + [$ID] + '/' + [$iteratorName] + '?web=1'",
+                "href": "=@currentWeb + '/Lists/' + 'YOUR-LIST-NAME' + '/Attachments/' + [$ID] + '/' + [$iteratorName] + '?web=1'",
                 "target": "blank",
                 "class": "sp-field-bold ms-fontColor-themeDark ms-fontColor-white--hover"
               }

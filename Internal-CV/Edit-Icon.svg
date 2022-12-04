@@ -1,0 +1,18 @@
+<svg viewBox="0 0 512 470" width="512px" height="470px" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <g transform="matrix(1, 0, 0, 1, 0, -21)">
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="426.061" y2="21">
+      <stop offset="0" stop-color="#5558ff"></stop>
+      <stop offset="1" stop-color="#00c0ff"></stop>
+    </linearGradient>
+    <linearGradient id="SVGID_00000005947341577868970430000002528576412887008944_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="491" y2="76">
+      <stop offset="0" stop-color="#addcff"></stop>
+      <stop offset="0.5028" stop-color="#eaf6ff"></stop>
+      <stop offset="1" stop-color="#eaf6ff"></stop>
+    </linearGradient>
+    <g>
+      <path d="m113.345 247.947-113.345 178.114v-390.061c0-8.284 6.716-15 15-15h482c8.284 0 15 6.716 15 15v366.593l-153.794-215.311c-5.982-8.375-18.43-8.375-24.412 0l-123.615 173.06-71.524-112.395c-5.894-9.263-19.416-9.263-25.31 0z" fill="url(#SVGID_1_)" data-original="url(#SVGID_1_)"></path>
+      <path d="m0 476v-49.939l113.345-178.114c5.894-9.262 19.416-9.262 25.31 0l71.524 112.395 123.615-173.06c5.982-8.375 18.43-8.375 24.412 0l153.794 215.311v73.407c0 8.284-6.716 15-15 15h-482c-8.284 0-15-6.716-15-15zm261-345c0-30.327-24.673-55-55-55s-55 24.673-55 55 24.673 55 55 55 55-24.673 55-55z" fill="url(#SVGID_00000005947341577868970430000002528576412887008944_)" data-original="url(#SVGID_00000005947341577868970430000002528576412887008944_)"></path>
+    </g>
+  </g>
+</svg>

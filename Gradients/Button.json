@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
   "elmType": "div",
   "style": {
-    "margin": "6px 0px 6px 0px"
+    "margin": "10px 0px 6px 0px"
   },
   "children": [
     {
@@ -11,16 +11,16 @@
         "src": "INSERT-SVG-DIRECT-PATH"
       },
       "style": {
-        "width": "160px",
-        "height": "60px",
-        "border-radius": "38px"
+        "width": "150px",
+        "height": "42px",
+        "border-radius": "24px"
       }
     },
     {
       "elmType": "a",
       "style": {
-        "width": "160px",
-        "height": "60px",
+        "width": "150px",
+        "height": "42px",
         "font-size": "20px",
         "color": "white",
         "font-weight": "bold",
@@ -34,7 +34,7 @@
         "href": "https://www.microsoft.com",
         "target": "_blank"
       },
-      "txtContent": "PUSH HERE!"
+      "txtContent": "Lean more"
     }
   ]
 }

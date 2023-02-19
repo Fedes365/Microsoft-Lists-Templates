@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "margin": "6px 0px 6px 0px"
+  },
+  "children": [
+    {
+      "elmType": "img",
+      "attributes": {
+        "src": "=@currentField.serverUrl + @currentField.serverRelativeUrl"
+      },
+      "style": {
+        "width": "160px",
+        "height": "56px",
+        "border-radius": "40px"
+      }
+    },
+    {
+      "elmType": "a",
+      "style": {
+        "width": "160px",
+        "height": "60px",
+        "font-size": "20px",
+        "color": "white",
+        "font-weight": "bold",
+        "position": "absolute",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "text-decoration": "none"
+      },
+      "attributes": {
+        "href": "https://www.microsoft.com",
+        "target": "_blank"
+      },
+      "txtContent": "PUSH HERE!"
+    }
+  ]
+}
